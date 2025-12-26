@@ -71,7 +71,6 @@ namespace engine {
 
 #define EngineTemplate template<typename Policy, typename Hook>                 \
 requires EnginePolicy<Policy> && EngineHook<Hook, typename Policy::record_type> 
-
     /**
      * Actual Engine template, this is responsible to create/load the state, and serve queries to read and write to the
      * state. 
@@ -105,5 +104,6 @@ requires EnginePolicy<Policy> && EngineHook<Hook, typename Policy::record_type>
         state_type _state;
         Hook _hook;
     };
+#undef EngineTemplate
 }
 #endif
