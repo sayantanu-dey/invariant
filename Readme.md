@@ -1,2 +1,2 @@
-# Invariant - legos to build high performing data stores
+# Invariant - legos to build low latency data stores
 
